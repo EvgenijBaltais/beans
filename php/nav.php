@@ -10,4 +10,19 @@
 			</li>
 		</ul>-->
 	</li>
-	<li class = "nav-list-item"><a href="/about" class = "nav-list-link<? if ($_SERVER['REQUEST_URI'] == '/about'):?><?=' active'?><?endif?>">О нас</a></li><li class = "nav-list-item"><a href="/contacts" class = "nav-list-link<? if ($_SERVER['REQUEST_URI'] == '/contacts'):?><?=' active'?><?endif?>">Контакты</a></li></ul><a href="/cart" rel="nofollow" class = "cart" aria-label="Перейти в корзину"></a><div class = "menu-area"><div class="menu-area-w"></div><div class="menu-icon"><span></span><span></span><span></span><span></span></div><p class = "menu-area-text">Меню</p></div><div class = "cart-warnings"></div></div></nav></header>
+	<li class = "nav-list-item"><a href="/about" class = "nav-list-link<? if ($_SERVER['REQUEST_URI'] == '/about'):?><?=' active'?><?endif?>">О нас</a></li><li class = "nav-list-item"><a href="/contacts" class = "nav-list-link<? if ($_SERVER['REQUEST_URI'] == '/contacts'):?><?=' active'?><?endif?>">Контакты</a></li></ul>
+		
+		<!--<a href="/cart" rel="nofollow" class = "cart" aria-label="Перейти в корзину"></a>-->
+		<a href="/cart" rel="nofollow" aria-label="Перейти в корзину" class = "cart-block">
+			<span class = "cart-num">0</span>
+			&nbsp;
+			<span>товаров</span>
+			&nbsp;
+			<span>/</span>
+			&nbsp;
+			<span class = "cart-price-value">0</span>
+			&nbsp;
+			<span>₽</span>
+		</a>
+		
+		<div class = "menu-area"><div class="menu-area-w"></div><div class="menu-icon"><span></span><span></span><span></span><span></span></div><p class = "menu-area-text">Меню</p></div><div class = "cart-warnings"></div></div></nav></header>

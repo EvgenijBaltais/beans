@@ -26,29 +26,42 @@
 
 </head><body><? require_once('php/nav.php');?>
 <main class = "wrapper">
-	<section class = "section section-top">
-		<div class = "top-1">
-			<h2 class = "main-h1 padding-bottom-2">Любите кофе?</h2>
-			<p class = "main-h2 padding-bottom-2">Добро пожаловать в bluebeans.ru!</p>
-			<p class = "main-h3 padding-bottom-3">Предлагаем купить кофе в зернах от лучших производителей в нашем магазине.</p>
-			<p class = "main-h4">У нас только лучшие бренды, гибкие условия доставки и индивидуальный подход к каждому клиенту!</p>
-			<div class="red-btn btn-30px top-button">
-				<a href = "/catalog" aria-label = "Перейти" class = "top-button-ins"></a>
-				<span class="red-btn-span">Каталог</span>
-				<span class="red-btn-ins"></span>
+	<section class = "section-top main-page-screen">
+		<div class = "section main-page-screen-section">
+			<div class = "top-1">
+				<h2 class = "main-h1 padding-bottom-2">Любите кофе?</h2>
+				<p class = "main-h2 padding-bottom-2">Добро пожаловать в <a href = "/" class = "main-h-link">bluebeans.ru</a>!</p>
+				<p class = "main-h3 padding-bottom-3">Предлагаем купить кофе в зернах от лучших производителей в нашем магазине.</p>
+				<p class = "main-h4">У нас только лучшие бренды, гибкие условия доставки и индивидуальный подход к каждому клиенту!</p>
+				<a href = "/catalog" aria-label = "Перейти" class = "top-button">
+					Каталог
+				</a>
+			</div>
+			<div class = "top-2">
+				<img src="/images/kofe.png" alt="Пакет с кофейными зернами" class = "top-pic">
 			</div>
 		</div>
-		<div class = "top-2">
-			<img src="/images/kofe.png" alt="Пакет с кофейными зернами" class = "top-pic">
-		</div>
-		<a href = "#welcome" class = "btn btn-30px more-info scroll-to" data-scroll-to = "welcome">Узнать подробности</a>
+		<a href = "#welcome" class = "more-info scroll-to" data-scroll-to = "welcome"></a>
 	</section>
 	<section class = "section section-welcome" id = "welcome">
-		<h2 class = "h2-title">Если вы любитель кофе - наш магазин <a href = "/">Bluebeans.ru</a> к вашим услугам!</h2>
-		<p class = "simply-text">Американо, капуччино, мокко, латте, эспрессо - каждый выбирает напиток по вкусу, но любой из них начинается с качественных кофейных зерен.</p>
-		<p class = "simply-text">Именно кофе в зернах является основным направлением нашего магазина. У нас представлены бренды из 100% арабики, а также смеси арабики и робусты.</p>
-		<p class = "simply-text">Если вы ищете кофе в зернах для кофемашины, турки, френчпресса или капельной кофеварки - то мы рады предложить вам лучшее из того, что есть на рынке.</p>
-		<p class = "simply-text">Производителей и марок много, и мы предлагаем своим клиентам только самые проверенные из них. Ознакомиться с ассортиментом можно в нашем <a class = "simply-link" href = "/catalog">каталоге</a>:</p>
+		<h2 class = "h2-title">Почему стоит заказать именно у нас?</h2>
+		
+		<div class = "advantages-constructor">
+			<div class = "advantages-constructor-first"></div>
+			<div class = "advantages-constructor-second"></div>
+			<div class = "advantages-constructor-list-w">
+				<ul class = "advantages-constructor-list">
+					<li class = "advantages-constructor-item">Только оригинальный товар</li>
+					<li class = "advantages-constructor-item">Только проверенные поставщики</li>
+					<li class = "advantages-constructor-item">Не устроит качество - вернем деньги</li>
+					<li class = "advantages-constructor-item">Гибкие условия доставки</li>
+					<li class = "advantages-constructor-item">Удобные способы оплаты</li>
+					<li class = "advantages-constructor-item">На связи с 9-00 до 21-00</li>
+					<li class = "advantages-constructor-item">Бережно относимся к товару</li>
+					<li class = "advantages-constructor-item">Всегда готовы пойти на встречу</li>
+				</ul>
+			</div>
+		</div>
 	</section>
 		
 		<? require_once("php/assortment_block.php");?>
