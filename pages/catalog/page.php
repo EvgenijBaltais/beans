@@ -63,17 +63,17 @@
 					</div>
 					<div class = "product-description">
 						<h2 class="secondary-h2"><?=$item['category'];?> <?=$item['brand'];?> <?=$item['name'];?></h2>
-						<div class = "product-price">
+						<div class = "product-content-item">
 
 							<div class = "item-info-w-2">
-								<div class = "item-plus-minus-2">
-									<div class = "item-amount-minus-2">–</div>
+								<div class = "amount-select">
+									<div class = "amount-select-minus">–</div>
 									<div class = "item-amount-val-block-2">
 										<label for = "num-<?=$item['id'];?>">
-											<input type="text" name = "item-amount-value" class = "item-amount-value-2" readonly = "readonly" value = "1" id = "num-<?=$item['id'];?>" aria-label="Количество товаров для заказа">
+											<input type="text" name = "item-amount-value" class = "amount-select-value" readonly = "readonly" value = "1" id = "num-<?=$item['id'];?>" aria-label="Количество товаров для заказа">
 										</label>
 									</div>
-									<div class = "item-amount-plus-2">+</div>
+									<div class = "amount-select-plus">+</div>
 								</div>
 								<div class = "item-info-2 item-info-1-2">
 									<?=$item['sale'] ? '<span class = "item-info__full-2">' . $item['price'] .  ' ₽</span>' : '';?>
@@ -96,39 +96,57 @@
 							<span class = "accessibility-span">Обратите внимание на другие товары в <a href = "/catalog/">каталоге</a>.</span>
 							<? endif; ?>
 						</div>
-						<div class = "product-price">
-							<span class = "price-info-span">Вес:</span>
-							<span class = "price-span"><?=$item['weight'];?></span>
-						</div>
-						<? if ($item['blend']):?>
-						<div class = "product-price product-price-flex">
-							<span class = "price-info-span">Сорт:</span>
-							<span class = "colored-span-item"><?=$item['blend'];?></span>
-						</div>
-						<? endif; ?>
-						<? if ($item['tastes']): ?>
-							<div class = "product-price product-price-flex">
-								<span class = "price-info-span">Вкус:</span>
-								<? $tastes = explode(",", $item['tastes']);?>
-								<? foreach ($tastes as $key => $value):?><span class = "colored-span-item"><?=$value;?></span><? endforeach;?>
+						<section class = "product-content">
+							<h2 class = "product-content-title">В одной упаковке содержится:</h2>
+							<div class = "product-content-item">
+								<span class = "price-info-span">Вес:</span>
+								<span class = "product-content-span"><?=$item['weight'];?></span>
 							</div>
-						<? endif;?>
-						<? if ($item['beans_region']): ?>
-							<div class = "product-price product-price-flex">
-								<span class = "price-info-span">Происхождение зерен:</span>
-								<span class = "colored-span-item"><?=$item['beans_region']?></span>
+							<? if ($item['blend']):?>
+							<div class = "product-content-item product-content-item-flex">
+								<span class = "price-info-span">Сорт:</span>
+								<span class = "product-content-span"><?=$item['blend'];?></span>
 							</div>
-						<? endif;?>
-						<? if ($item['roasting']):?>
-						<div class = "product-price product-price-flex">
-							<span class = "price-info-span">Обжарка:</span>
-							<? for ($i = 0; $i < 8; $i++):?>
-								<div class = "roasting-bean" style = "background-image: url('../images/icons/<?=($i + 1 <= $item['roasting'] ? 'roast' : 'nonroast'); ?>.svg'); "></div>
-							<? endfor; ?>
-						</div>
-						<? endif; ?>
-						<p class = "product-p"><?=$item['products_text']?></p>
-						
+							<? endif; ?>
+							<? if ($item['tastes']): ?>
+								<div class = "product-content-item product-content-item-flex">
+									<span class = "price-info-span">Вкус:</span>
+									<span class = "product-content-span"><?=$item['tastes'];?></span>
+								</div>
+							<? endif;?>
+							<? if ($item['beans_region']): ?>
+								<div class = "product-content-item product-content-item-flex">
+									<span class = "price-info-span">Происхождение зерен:</span>
+									<span class = "product-content-span"><?=$item['beans_region']?></span>
+								</div>
+							<? endif;?>
+							<? if ($item['roasting']):?>
+							<div class = "product-content-item product-content-item-flex">
+								<span class = "price-info-span">Обжарка:</span>
+								<? for ($i = 0; $i < 8; $i++):?>
+									<div class = "roasting-bean" style = "background-image: url('../images/icons/<?=($i + 1 <= $item['roasting'] ? 'roast' : 'nonroast'); ?>.svg'); "></div>
+								<? endfor; ?>
+							</div>
+							<? endif; ?>
+							<? //if ($item['roasting']):?>
+							<div class = "product-content-item product-content-item-flex">
+								<span class = "price-info-span">Для кого:</span>
+								
+							</div>
+							<? //endif; ?>
+							</section>
+							<div class = "product-item-add-cart">
+								<div class = "order-buttons">
+									<div class="order-button order-button-cart" data-id = "<?=$item['id']?>">
+										Добавить в корзину
+									</div><!--
+									<div class="red-btn btn-30px order-button">
+										<div class = "order-button-ins"></div>
+										<span class="order-btn-span">Быстрый заказ через чат</span>
+										<div class="red-btn-ins"></div>
+									</div>-->
+								</div>
+							</div>
 						<?
 							$different_weight_product = [];
 							
@@ -150,32 +168,14 @@
 								<div class = "volume-variants">
 									<? foreach ($different_weight_product as $item2): ?>
 										<? if ($item2['weight'] != $item['weight']): ?>
-											<a class="volume-item another" href = "/catalog/<?=$item2['url_name'];?>"><?=$item2['weight']?></a>
+											<a class="volume-item" href = "/catalog/<?=$item2['url_name'];?>">
+												<span><?=$item['category'];?> <?=$item['brand'];?> <?=$item['name'];?>,</span> <span class = "bold-text-600"><?=$item2['weight']?></span>
+											</a>
 										<? endif; ?>
 									<? endforeach; ?>
 								</div>
 							</div>
 						<? endif; ?>
-						<div class = "product-item-add-cart">
-							<div class="product-amount">
-								<span class="product-span bold-text-600">Количество:</span>
-								<div class="amount-select">
-									<div class = "amount-select-minus"></div>
-									<input class = "amount-select-value" value = "1">
-									<div class = "amount-select-plus"></div>
-								</div>
-							</div>
-							<div class = "order-buttons">
-								<div class="order-button order-button-cart" data-id = "<?=$item['id']?>">
-									Добавить в корзину
-								</div><!--
-								<div class="red-btn btn-30px order-button">
-									<div class = "order-button-ins"></div>
-									<span class="order-btn-span">Быстрый заказ через чат</span>
-									<div class="red-btn-ins"></div>
-								</div>-->
-							</div>
-						</div>
 					</div>
 					<section class = "our-advantages">
 						<h3 class = "our-advantages-title">Почему стоит заказать именно у нас?</h3>

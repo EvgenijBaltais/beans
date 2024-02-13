@@ -1398,7 +1398,7 @@ body {
 	overflow: hidden;
 }
 
-.item-plus-minus-2 {
+.amount-select {
 	display: flex;
 	width: 165px;
 	height: 42px;
@@ -1422,7 +1422,7 @@ body {
 	user-select: none;
 }
 
-.item-amount-minus-2 {
+.amount-select-minus {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1451,7 +1451,7 @@ body {
 	user-select: none;
 }
 
-.item-amount-plus-2 {
+.amount-select-plus {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1488,7 +1488,7 @@ body {
 	color: rgb(63, 79, 79);
 }
 
-.item-amount-value-2 {
+.amount-select-value {
 	display: block;
 	width: 100%;
 	height: 38px;
@@ -1549,18 +1549,22 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 300px;
-	height: 50px;
+	width: 275px;
+	height: 70px;
 	position: relative;
-	margin: 20px 0 0 0;
+	margin: 30px 0 0 0;
 	padding: 0 40px;
-    background-color: #1E77BC;
-    transition: all .2s;
+    background-color: rgb(44,156,219);
+    transition: background-color .2s;
     color: #fff;
     cursor: pointer;
 	font-size: 20px;
-    line-height: 28px;
-	border-radius: 10px;
+    line-height: 70px;
+}
+
+.order-button:hover {
+	background-color: rgb(38, 175, 97);
+	transition: background-color .2s;
 }
 
 .order-button-cart-link {
@@ -1811,11 +1815,11 @@ body {
 }
 
 /* Форма отзывов, конец */
-
+/*
 .non-main-wrapper {
 	padding-top: 65px;
 }
-
+*/
 .our-politics {
 	padding: 50px 0 50px 40px;
 }
@@ -2221,12 +2225,12 @@ body {
 
 .product-pics {
 	position: relative;
-	width: 550px;
+	width: 650px;
 	padding-bottom: 400px;
 }
 
 .product-description {
-	width: calc(100% - 620px);
+	width: calc(100% - 680px);
 	padding-top: 30px;
 }
 
@@ -2234,7 +2238,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	padding-top: 15px;
+	padding-top: 25px;
 	padding-bottom: 10px;
 }
 
@@ -2246,9 +2250,11 @@ body {
 }
 
 .accessibility-div span {
-	padding-left: 5px;
-	font-size: 20px;
-	line-height: 26px;
+	padding-left: 8px;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: bold;
+	color: rgb(38, 175, 97);
 }
 
 .product-rejected {
@@ -2265,14 +2271,13 @@ body {
 .price-info-span {
 	font-weight: bold;
 	padding-right: 10px;
-	font-size: 20px;
-	line-height: 26px;
+	font-size: 17px;
+	line-height: 22px;
 }
 
-.price-span {
-	font-weight: bold;
-	font-size: 24px;
-	line-height: 26px;
+.product-content-span {
+	font-size: 17px;
+	line-height: 22px;
 }
 
 .price-span-break {
@@ -2281,9 +2286,18 @@ body {
 	font-size: 20px;
 }
 
-.product-price {
-	padding-top: 10px;
-	padding-bottom: 5px;
+.product-content {
+	padding: 20px 0;
+}
+
+.product-content-title {
+	font-size: 21px;
+	line-height: 26px;
+	padding-bottom: 10px;
+}
+
+.product-content-item {
+	padding-top: 5px;
 }
 
 .product-tastes {
@@ -2293,33 +2307,22 @@ body {
 	line-height: 20px;
 }
 
-.product-price-flex {
+.product-content-item-flex {
 	display: flex;
 	align-items: center;
 }
 
 .roasting-bean {
-	width: 30px;
-	height: 30px;
+	width: 25px;
+	height: 25px;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-.colored-span-item {
-	display: inline-block;
-	padding: 5px 10px;
-	border-radius: 5px;
-	margin-right: 7px;
-	background-color: #1E77BC;
-	color: #fff;
-	font-size: 16px;
-    line-height: 18px;
-}
-
 .accessibility-svg {
-	width: 15px;
-	height: 15px;
+	width: 16px;
+	height: 16px;
 }
 
 .product-p {
@@ -2339,23 +2342,11 @@ body {
 }
 
 .volume-item {
-	display: inline-flex;
-	padding: 10px 20px;
-	margin-right: 20px;
-	font-size: 20px;
-	line-height: 20px;
-	user-select: none;
-	background-color: #1E77BC;
-	color: #fff;
-	cursor: pointer;
-	text-decoration: none;
-	border-radius: 10px;
+	color: rgb(71, 168, 223);
 }
-
-.volume-item:last-child {
-	margin-right: 0
+.volume-item span {
+	color: rgb(71, 168, 223);
 }
-
 
 .product-amount {
 	width: 300px;
@@ -2369,113 +2360,6 @@ body {
 	font-size: 20px;
 	line-height: 26px;
 	padding-right: 10px;
-}
-
-.amount-select {
-	display: flex;
-	align-items: center;
-}
-
-.amount-select-minus {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	font-size: 26px;
-	line-height: 26px;
-	font-weight: bold;
-	user-select: none;
-    background-color: #1E76BA;
-	cursor: pointer;
-}
-
-.added-to-cart-w .amount-select-minus {
-	background-color: #44AA03;
-}
-
-.amount-select-minus:after {
-    width: 20px;
-    height: 4px;
-    border-radius: 10px;
-    background-color: #fff;
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.amount-select-plus {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	font-size: 26px;
-	line-height: 26px;
-	font-weight: bold;
-	user-select: none;
-	background-color: #1E76BA;
-	cursor: pointer;
-}
-
-.added-to-cart-w .amount-select-plus {
-	background-color: #44AA03;
-}
-
-.amount-select-plus:after {
-	width: 20px;
-	height: 4px;
-	border-radius: 10px;
-	background-color: #fff;
-	content: '';
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-}
-
-.amount-select-plus:before {
-	width: 20px;
-	height: 4px;
-	border-radius: 10px;
-	background-color: #fff;
-	content: '';
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-	transform: rotate(90deg);
-}
-
-.amount-select-value {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 60px;
-	height: 40px;
-	font-size: 20px;
-	line-height: 26px;
-	font-weight: bold;
-	user-select: none;
-	background-color: transparent!important;
-	border: 0!important;
-	outline: 0!important;
-	text-align: center;
 }
 
 .product-details-item {
@@ -2584,8 +2468,8 @@ body {
 .glide__item-pic {
 	position: relative;
 	display: block;
-	width: 430px;
-	height: 430px;
+	width: 520px;
+	height: 520px;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -3173,21 +3057,9 @@ body {
 		font-size: 18px;
 	}
 
-	.volume-item {
-		font-size: 18px;
-	}
-
 	.product-span {
 		font-size: 18px;
 		line-height: 24px;
-	}
-	.amount-select-value {
-		font-size: 18px;
-		line-height: 24px;
-	}
-
-	.product-amount {
-		width: 303px
 	}
 
 	.logo-main {
@@ -3942,10 +3814,6 @@ body {
 		width: 100%;
 		padding: 0 25px;
 		margin-top: 40px;
-	}
-	.product-amount {
-	    width: 300px;
-	    margin: 0 auto;
 	}
 
 	.amount-select-minus {
