@@ -62,11 +62,25 @@
 						</div>
 					</div>
 					<div class = "product-description">
-						<h2 class="main-h2"><?=$item['category'];?> <?=$item['brand'];?> <?=$item['name'];?></h2>
+						<h2 class="secondary-h2"><?=$item['category'];?> <?=$item['brand'];?> <?=$item['name'];?></h2>
 						<div class = "product-price">
-							<span class = "price-info-span">Цена:</span>
-							<span class = "price-span"><?=$item['sale'] ? floor($item['price'] - $item['price'] / $item['sale']) : $item['price'];?> руб.</span>
-							<?=$item['sale'] ? '&nbsp;&nbsp;<span class = "price-span price-span-break">' . $item['price'] . ' руб.</span>' : ''?>
+
+							<div class = "item-info-w-2">
+								<div class = "item-plus-minus-2">
+									<div class = "item-amount-minus-2">–</div>
+									<div class = "item-amount-val-block-2">
+										<label for = "num-<?=$item['id'];?>">
+											<input type="text" name = "item-amount-value" class = "item-amount-value-2" readonly = "readonly" value = "1" id = "num-<?=$item['id'];?>" aria-label="Количество товаров для заказа">
+										</label>
+									</div>
+									<div class = "item-amount-plus-2">+</div>
+								</div>
+								<div class = "item-info-2 item-info-1-2">
+									<?=$item['sale'] ? '<span class = "item-info__full-2">' . $item['price'] .  ' ₽</span>' : '';?>
+									<span class = "item-info__span-2"><?=$item['sale'] ? floor($item['price'] - $item['price'] / $item['sale'])  : $item['price'];?> ₽</span>
+								</div>
+							</div>
+
 						</div>
 						<div class = "product-accessibility">
 							<? if ($item['available']):?>

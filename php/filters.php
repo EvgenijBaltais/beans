@@ -9,10 +9,10 @@
 	<section class = "filters-blocks-items filters-products">
 		<h3 class="h4-title">Разделы:</h3>
 		<div class = "filters-blocks">
-			<a class = "filters-block-item <? if (strpos($_SERVER['REQUEST_URI'], 'kofe_v_zernah')): ?> active<? endif;?>" href = "/catalog/kofe_v_zernah">
+			<a class = "filters-block-item<? if (strpos($_SERVER['REQUEST_URI'], 'kofe_v_zernah')): ?> active<? endif;?>" href = "/catalog/kofe_v_zernah">
 				Кофе в зернах
 			</a>
-			<a class = "filters-block-item <? if (strpos($_SERVER['REQUEST_URI'], 'molotiy_kofe')): ?> active<? endif;?>" href = "/catalog/molotiy_kofe">
+			<a class = "filters-block-item<? if (strpos($_SERVER['REQUEST_URI'], 'molotiy_kofe')): ?> active<? endif;?>" href = "/catalog/molotiy_kofe">
 				Кофе молотый
 			</a>
 		</div>
@@ -31,7 +31,7 @@
 		</div>
 	</section>
 	<section class = "filters-blocks-items filters-volume">
-		<h3 class="h4-title">Показать товары по объему:</h3>
+		<h3 class="h4-title">Показать товары по весу:</h3>
 		<div class = "filters-blocks">
 			<? foreach ($weights as $item): ?>
 				<? (int)$item == '1' ? $dataItem = 1000 : $dataItem = (int)$item;?>

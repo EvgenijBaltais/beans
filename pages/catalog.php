@@ -35,4 +35,5 @@
 			<? require_once("php/filters.php");?>
 			<? require_once("php/assortment_block.php");?>
 			<? require_once('php/subscribe-form.php');?>
+			<? require_once('php/feedback-form.php');?>
 		</main><? require_once('./php/footer.php');?><script type="module" src = "../js/script.min.js"></script></body></html>
