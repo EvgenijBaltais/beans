@@ -1,5 +1,5 @@
-		<section class = "section subscribe-section">
-			<div class = "email-subscription">
+		<section class = "subscribe-section">
+			<div class = "email-subscription section">
 				<h2 class = "h2-title h2-title-subscribe">Подпишитесь на нашу рассылку!</h2>
 				<p class = "email-subscription-p">Оставьте свой email и мы будем присылать интересные предложения о новинках и скидках!</p>
 				<form action="#" class = "subscribe-form" name = "subscribe-form">

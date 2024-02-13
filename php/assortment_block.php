@@ -52,14 +52,14 @@ $get_weight = check_get_weight (get_weights($data));
 							</div>
 							<div class = "item-amount-plus">+</div>
 						</div>
-						<div class = "item-info item-info-2">
-							<?=$item['sale'] ? '<span class = "item-info__full">' . $item['price'] .  ' р</span>' : '';?>
-							<span class = "item-info__span"><?=$item['sale'] ? floor($item['price'] - $item['price'] / $item['sale'])  : $item['price'];?> р</span>
+						<div class = "item-info item-info-1">
+							<?=$item['sale'] ? '<span class = "item-info__full">' . $item['price'] .  ' ₽</span>' : '';?>
+							<span class = "item-info__span"><?=$item['sale'] ? floor($item['price'] - $item['price'] / $item['sale'])  : $item['price'];?> ₽</span>
 						</div>
 					</div>
 					<div class = "item-order-info">
-						<span class = "small-btn btn-10px item-order-btn">Заказать</span>
-						<a href = "/catalog/<?=$item['url_name'];?>" class = "small-btn btn-10px item-more-btn">Подробнее</a>
+						<span class = "item-order-btn">В корзину</span>
+						<a href = "/catalog/<?=$item['url_name'];?>" class = "item-more-btn">Подробнее</a>
 					</div>
 				</div>
 			</div>
