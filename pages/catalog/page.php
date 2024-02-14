@@ -216,5 +216,6 @@
 						<div class = "product-details-item">
 							<p class = "product-details-item__title">Вид упаковки</p>
 							<p class = "product-details-item__text">флоу-пак</p></div><div class = "product-details-item"><p class = "product-details-item__title">Материал упаковки</p><p class = "product-details-item__text">смесь полимеров</p></div><div class = "product-details-item"><p class = "product-details-item__title">Срок годности</p><p class = "product-details-item__text">1 год</p></div><div class = "product-details-item"><p class = "product-details-item__title">Условия хранения</p><p class = "product-details-item__text">До и после вскрытия хранить в закрытой упаковке в сухом прохладном месте.</p></div></div></section>
-						<? require_once('php/subscribe-form.php');?>
+						<? require_once('./php/subscribe-form.php');?>
+						<? require_once('./php/feedback-form.php');?>
 						</main><? require_once('./php/footer.php');?><script src = "/node_modules/@glidejs/glide/dist/glide.min.js"></script><script type="module" src = "../js/script.min.js"></script><script src = "../js/carousels.min.js"></script></body></html>

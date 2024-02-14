@@ -22,4 +22,68 @@
 	
 	<meta name="format-detection" content="telephone=no"></head><body><? require_once('./php/nav.php');?><main class = "wrapper non-main-wrapper">
 		<h1 class = "main-h1 section">Контакты для связи</h1>
-		<section class = "section"><div class = "contacts-section"><p class="simply-text">Мы работаем и доставляем кофе в Москве и Московской области.</p><p class="simply-text">Если вы заинтересовались нашим ассортиментом и у вас есть какие-то вопросы, пожелания или предложения, <a href = "#" rel="nofollow" class = "simply-link send-request-link">пишите нам через форму</a> <!--в чате в нижнем правом углу--> или на почту <a href = "mailto:mail@bluebeans.ru" rel="nofollow" class = "simply-link">mail@bluebeans.ru</a></p></div></section></main><? require_once('./php/footer.php');?><script src = "/plugins/Inputmask-5.x/dist/inputmask.min.js"></script><script type="module" src = "../js/script.min.js"></script></body></html>
+		<section class = "section"><div class = "contacts-section"><p class="simply-text">Мы работаем и доставляем кофе в Москве и Московской области.</p><p class="simply-text">Если вы заинтересовались нашим ассортиментом и у вас есть какие-то вопросы, пожелания или предложения, пишите нам через форму:</p></div></section>
+	
+		<div class = "form-order">
+			<p class = "form-order-title">Отправить заявку</p>
+			<p class = "form-order-subtitle">И мы свяжемся с Вами в кратчайшие сроки</p>
+			<form class = "order-form" name = "order-form">
+				<div class = "form-order-wrapper">
+					<div class = "form-order-item">
+						<input type = "text" class = "form-order-input" name = "name" placeholder = "Ваше имя">
+					</div>
+					<div class = "form-order-item">
+						<input type = "text" class = "form-order-input" name = "email" placeholder = "Ваш Email">
+					</div>
+					<div class = "form-order-item form-order-item-phone">
+						<input type = "text" class = "form-order-input form-order-input-phone" name = "phone" placeholder = "Ваш телефон (обязательно для заполнения)">
+					</div>
+					<div class = "form-order-item">
+						<textarea class = "form-order-textarea" placeholder = "Текст комментария"></textarea>
+					</div>
+					<div class="contact-method">
+						<p class = "contact-method-title">Какой способ связи для Вас предпочтительнее?</p>
+						<div class = "contact-method-form">
+							<label class="contact-label">
+								<input type="radio" name="radio" checked />
+								<span>Телефон</span>
+							</label>
+							<label class="contact-label">
+								<input type="radio" name="radio" />
+								<span>Whatsapp</span>
+							</label>
+							<label class="contact-label">
+								<input type="radio" name="radio" />
+								<span>Telegram</span>
+							</label>
+							<label class="contact-label">
+								<input type="radio" name="radio" />
+								<span>Не важно</span>
+							</label>
+							<div class = "contact-method-form-2">
+								<label class="contact-label">
+									<input type="radio" name="radio-2" checked />
+									<span>Звонок</span>
+								</label>
+								<label class="contact-label">
+									<input type="radio" name="radio-2" />
+									<span>Сообщение</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class = "form-order-submit">
+						<button type = "button" class = "form-order-btn">Отправить!</button>
+					</div>
+					<div class = "form-order-agree">
+						* Нажимая на кнопку "Отправить!", Вы даете согласие на обработку персональных данных
+					</div>
+				</div>
+            </form>
+			<p class = "form-choise">или</p>
+			<p class = "form-choise-mail">
+				на почту <a href = "mailto:mail@bluebeans.ru" rel="nofollow" class = "simply-link">mail@bluebeans.ru</a>
+			</p>
+        </div>
+	
+	</main><? require_once('./php/footer.php');?><script src = "/plugins/Inputmask-5.x/dist/inputmask.min.js"></script><script type="module" src = "../js/script.min.js"></script></body></html>

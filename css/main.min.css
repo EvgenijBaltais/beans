@@ -923,11 +923,9 @@ body {
 
 .form-order {
 	position: relative;
-	margin: 150px auto;
-	max-width: 600px;
+	margin: 0 auto;
+	max-width: 485px;
 	padding: 30px;
-	background: #fff;
-	z-index: 6;
 }
 
 .close-form {
@@ -948,20 +946,28 @@ body {
 
 .form-order-btn {
 	width: 100%;
+	height: 70px;
 	outline: 0!important;
 	border: 0;
-	border-radius: 20px;
     font-size: 24px;
     line-height: 50px;
+	color: #fff;
+	background-color: rgb(39, 174, 97);
+	cursor: pointer;
+	transition: .2s background-color;
+}
+
+.form-order-btn:hover {
+	background-color: rgb(99,149,156);
+	transition: .2s background-color;
 }
 
 .form-order-input {
 	display: block;
-	border-radius: 20px;
 	width: 100%;
-	height: 50px;
+	height: 70px;
 	padding: 0 10px;
-	border: 1px solid #000;
+	border: 2px solid rgb(179,147,121);
 	outline: 0!important;
 	font-size: 18px;
 	line-height: 18px;
@@ -976,25 +982,15 @@ body {
 	position: relative;
 }
 
-.form-order-item-phone:after {
-	content: '*';
-	display: block;
-	position: absolute;
-	top: 11px;
-	right: 11px;
-	font-size: 30px;
-	color: rgb(221,72,14);
-}
-
 .form-order-textarea {
 	display: block;
-	border-radius: 20px;
 	padding: 10px;
 	width: 100%;
 	min-height: 100px;
 	outline: 0!important;
 	font-size: 18px;
 	line-height: 18px;
+	border: 2px solid rgb(179,147,121);
 }
 
 .form-order-textarea::placeholder {
@@ -1003,7 +999,23 @@ body {
 }
 
 .form-order-agree {
-	padding: 40px 0 0 0;
+	padding: 30px 0 0 0;
+	font-style: italic;
+	color: rgb(62, 78, 78);
+}
+
+.form-choise {
+	text-align: center;
+	font-weight: bold;
+	margin: 50px 0;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.form-choise-mail {
+	text-align: center;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 .form-order-title {
@@ -1336,11 +1348,11 @@ body {
 	align-items: center;
 	justify-content: center;
 	width: 47.5%;
-	height: 40px;
+	height: 48px;
 	padding-left: 20px;
 	text-decoration: none;
 	font-size: 18px;
-	line-height: 40px;
+	line-height: 48px;
 	user-select: none;
 	background-color: rgb(162,123,92);
 	color: #fff;
@@ -1361,10 +1373,10 @@ body {
 	align-items: center;
 	justify-content: center;
 	width: 47.5%;
-	height: 40px;
+	height: 48px;
 	text-decoration: none;
 	font-size: 18px;
-	line-height: 40px;
+	line-height: 48px;
 	user-select: none;
 	border: 1px solid rgb(162,123,92);
 	color: rgb(162,123,92)
@@ -1627,12 +1639,12 @@ body {
 /* Преимущества заказов у нас */
 
 .our-advantages {
-	position: absolute;
-	top: 620px;
 	width: 550px;
-	padding: 20px;
-	border: 1px solid #ccc;
-    border-radius: 10px;
+	padding: 30px 40px;
+	margin-top: 50px;
+	box-shadow: 0px 6px 10px 0px rgba(34, 60, 80, 0.2);
+	margin-left: auto;
+    margin-right: 0;
 }
 
 .our-advantages-title {
@@ -1646,11 +1658,13 @@ body {
 }
 
 .our-advantages-item {
-	padding-left: 35px;
+	padding-left: 45px;
 	margin-bottom: 10px;
+	font-size: 18px;
+	line-height: 22px;
 	background-image: url('/images/icons/star.svg');
 	background-repeat: no-repeat;
-	background-size: 25px;
+	background-size: 30px;
 	background-position: left center;
 }
 
@@ -2226,7 +2240,6 @@ body {
 .product-pics {
 	position: relative;
 	width: 650px;
-	padding-bottom: 400px;
 }
 
 .product-description {
@@ -2673,6 +2686,7 @@ body {
 
 .catalog-carousel__item {
 	position: relative;
+	box-shadow: 0px 8px 16px 0px rgba(34, 60, 80, .05);
 }
 
 .catalog-carousel__arrow {
