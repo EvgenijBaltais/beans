@@ -34,8 +34,10 @@
 					<p class = "simply-text bold-text-600">Заказывайте ваш любимый кофе и оставайтесь с нами!</p>
 					<p class="simply-text">Если вы хотите сделать заказ - вот <a href = "/catalog" class = "simply-link">наш каталог</a></p>
 					<p class="simply-text">Вопросы, пожелания или предложения? → <a href = "mail@bluebeans.ru" rel="nofollow" class = "simply-link">mail@bluebeans.ru</a></p>
-				</div><? require_once('./php/catalog-carousel.php');?>
-				<? require_once('php/subscribe-form.php');?>
+				</div>
+				<? require_once('./php/catalog-carousel.php');?>
+				<? require_once('./php/subscribe-form.php');?>
+				<? require_once('./php/feedback-form.php');?>
 			</main><? require_once('./php/footer.php');?>
 			<script src = "/node_modules/@glidejs/glide/dist/glide.min.js"></script>
 			<script type="module" src = "../js/script.min.js"></script>

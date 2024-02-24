@@ -6,8 +6,10 @@
 
 		foreach ($data as $key => $value) {
 			(int)$value['weight'] == 1 ? $value['weight'] = 1000 : '';
-			in_array($value['weight'], $weights) ? '' : array_push($weights, (int)$value['weight']);
+			array_push($weights, (int)$value['weight']);
 		}
+
+		$weights = array_unique($weights);
 		rsort($weights);
 		return $weights;
 	}

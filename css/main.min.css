@@ -1235,7 +1235,7 @@ body {
 
 .item-top {
 	width: 100%;
-	height: 250px
+	height: 380px
 }
 
 .item-bottom {
@@ -1673,6 +1673,20 @@ body {
 }
 
 /* Преимущества работы у нас, конец */
+
+/* Немного о тоаре */
+
+.product-dop-content {
+	width: calc(100% - 600px);
+	margin-top: 80px;
+}
+
+.product-dop-text {
+	font-size: 20px;
+    line-height: 24px;
+}
+
+/* Немного о тоаре, конец */
 
 /* Секции */
 
@@ -2944,7 +2958,6 @@ body {
 }
 
 .agree-block .agree-text {
-	color: #63959C;
 	font-style: italic;
 }
 

@@ -61,10 +61,9 @@
 							</div>
 						</div>
 					</div>
-					<div class = "product-description">
+					<section class = "product-description">
 						<h2 class="secondary-h2"><?=$item['category'];?> <?=$item['brand'];?> <?=$item['name'];?></h2>
 						<div class = "product-content-item">
-
 							<div class = "item-info-w-2">
 								<div class = "amount-select">
 									<div class = "amount-select-minus">–</div>
@@ -80,7 +79,6 @@
 									<span class = "item-info__span-2"><?=$item['sale'] ? floor($item['price'] - $item['price'] / $item['sale'])  : $item['price'];?> ₽</span>
 								</div>
 							</div>
-
 						</div>
 						<div class = "product-accessibility">
 							<? if ($item['available']):?>
@@ -176,7 +174,17 @@
 								</div>
 							</div>
 						<? endif; ?>
-					</div>
+					</section>
+					<? if ($item['products_text']): ?>
+					<section class = "product-dop-content">
+						<h2 class = "product-dop-text">Несколько слов о товаре:</h2>
+						<div>
+							<p class="product-p">
+								<?=$item['products_text'];?>
+							</p>
+						</div>
+					</section>
+					<? endif; ?>
 					<section class = "our-advantages">
 						<h3 class = "our-advantages-title">Почему стоит заказать именно у нас?</h3>
 						<ul class = "our-advantages-list">
