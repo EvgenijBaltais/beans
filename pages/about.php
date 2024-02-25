@@ -17,7 +17,7 @@
 	<body>
 		<? require_once('./php/nav.php');?>
 		<main class = "wrapper non-main-wrapper">
-			<h1 class = "main-h1 section">О нас и нашем подходе</h1>
+			<h2 class = "secondary-h2 section">О нас и нашем подходе</h2>
 			<div class = "contacts-section section">
 				<p class = "simply-text">
 					<a href= "/" class = "simply-link">Bluebeans.ru</a> - интернет-магазин кофе в зернах, созданный любителями для любителей.</p>

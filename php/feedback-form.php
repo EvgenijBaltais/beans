@@ -20,7 +20,7 @@
 					</div>
 				</form>
 				<div class = "reviews-form-block-2">
-					<p class = "reviews-form-block-text">Форма для обратной связи и предложений. Мы читаем и учитываем все сообщения - критика ценна для нас так же как и одобрение.</p>
+					<p class = "reviews-form-block-text">Мы читаем и учитываем все сообщения - критика ценна для нас так же как и одобрение.</p>
 					<p class = "reviews-form-block-text bold-text-600">Отзывы нигде не публикуются без согласия автора.</p>
 					<p class = "reviews-form-block-text bold-text-600">Поля Имя и Email не обязательны к заполнению.</p>
 				</div>

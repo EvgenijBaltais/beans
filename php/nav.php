@@ -25,4 +25,4 @@
 			<span>₽</span>
 		</a>
 		
-		<div class = "menu-area"><div class="menu-area-w"></div><div class="menu-icon"><span></span><span></span><span></span><span></span></div><p class = "menu-area-text">Меню</p></div><div class = "cart-warnings"></div></div></nav></header>
+		<div class = "menu-area"><div class="menu-area-w"></div><div class="menu-icon"><span></span><span></span><span></span><span></span></div></div><div class = "cart-warnings"></div></div></nav></header>

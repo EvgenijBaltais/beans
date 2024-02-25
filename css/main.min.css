@@ -336,7 +336,7 @@ body {
 .cart-block {
 	display: inline-flex;
     position: absolute;
-    right: 20px;
+    right: 110px;
 	padding: 6px 10px 6px 40px;
 	background-color: rgb(221, 215, 201);
 	color: rgb(44, 54, 56);
@@ -428,21 +428,13 @@ body {
 }
 
 .nav-static .logo-main {
-	max-width: 140px;
+	max-width: 120px;
 	transition: max-width .2s;
 }
 
 .nav-static-temporary .logo-main {
-	max-width: 140px;
+	max-width: 120px;
 	transition: max-width .2s;
-}
-
-.nav-static .menu-area-text {
-	display: none;
-}
-
-.nav-static-temporary .menu-area-text {
-	display: none;
 }
 
 .top-contacts {
@@ -538,7 +530,6 @@ body {
 .footer {
 	display: flex;
 	width: 100%;
-	min-height: 200px;
 	background-color: #2C3638;
 }
 
@@ -664,7 +655,6 @@ body {
 	font-size: 18px;
 	line-height: 28px;
 	color: #fff;
-	text-decoration: none;
 	font-family: "RobotoThin";
 	text-decoration: underline;
 }
@@ -731,14 +721,16 @@ body {
 
 .secondary-h1 {
 	text-align: center;
-	font-size: 30px;
-	line-height: 40px;
+	font-size: 64px;
+	line-height: 70px;
 	padding: 10px 0 20px 0
 }
 
 .secondary-h2 {
-	font-size: 26px;
-	line-height: 34px;
+	font-size: 32px;
+	line-height: 38px;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 .secondary-h3 {
@@ -1561,7 +1553,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 275px;
+	width: 300px;
 	height: 70px;
 	position: relative;
 	margin: 30px 0 0 0;
@@ -3038,7 +3030,7 @@ body {
 	}
 
 	.item-top {
-		height: 200px;
+		height: 280px;
 	}
 
 	.item-order-info {
@@ -3090,7 +3082,7 @@ body {
 	}
 
 	.logo-main {
-		max-width: 220px;
+		max-width: 150px;
 	}
 
 	.item-title {
@@ -3138,13 +3130,43 @@ body {
 	.cart-summ {
 		padding: 10px;
 	}
+
+	.email-subscription {
+		padding-top: 50px;
+		padding-bottom: 120px;
+		background-position: center 300px
+	}
+
+	.footer-w {
+		margin: 50px auto;
+	}
 }
 
 @media only screen and (max-width: 1150px) {
 
-	.item-top {
-		height: 175px;
+	/* Форма отзывов */
+
+	.reviews-form-block {
+		flex-wrap: wrap;
+		padding-top: 0
 	}
+
+	.reviews-form-block-text {
+		padding-bottom: 0;
+	}
+
+	.reviews-form {
+		width: 100%;
+		order: 2
+	}
+
+	.reviews-form-block-2 {
+		width: 100%;
+		order: 1;
+		padding-bottom: 20px;
+	}
+
+	/* Форма отзывов, конец */
 }
 
 @media only screen and (max-width: 1050px) {
@@ -3212,8 +3234,7 @@ body {
 		display: block;
 		position: absolute;
 		right: 20px;
-		top: 0;
-		min-width: 50px;
+		top: 5px;
 		text-align: center;
 		transition: top .2s;
 	}
@@ -3226,18 +3247,11 @@ body {
 		margin: auto;
 		z-index: 5;
 	}
-	.menu-area-text {
-		position: absolute;
-		top: 35px;
-		left: 0;
-		right: 0;
-		margin: auto;
-	}
 	.menu-icon {
 		display: inline-block;
 		vertical-align: middle;
-		width: 32px;
-		height: 24px;
+		width: 42px;
+		height: 30px;
 		cursor: pointer;
 		position: relative;
 		transform: rotate(0deg);
@@ -3248,7 +3262,7 @@ body {
 		position: absolute;
 		height: 5px;
 		width: 100%;
-		background: #000;
+		background: #fff;
 		border-radius: 9px;
 		opacity: 1;
 		left: 0;
@@ -3460,6 +3474,51 @@ body {
 	.red-btn-ins {
 		background: #1E77BC;
 	}
+
+	.h2-title-subscribe {
+		font-size: 26px;
+		line-height: 38px;
+		padding-bottom: 20px;
+	}
+	.email-subscription-p {
+		font-size: 18px;
+		line-height: 24px;
+		padding-bottom: 20px;
+	}
+	.subscribe-email-label-form {
+		max-width: 500px;
+	}
+	.subscribe-email-label {
+		max-width: 100%;
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.subscribe-email-button {
+		width: 100%;
+	}
+	.email-subscription {
+		background-position: center 97%;
+	}
+
+	.footer-block {
+		width: 50%;
+	}
+	.footer-block:nth-child(1) {
+		order: 1;
+	}
+	.footer-block:nth-child(2) {
+		order: 3;
+	}
+	.footer-block:nth-child(3) {
+		order: 2;
+	}
+	.footer-block:nth-child(4) {
+		order: 4;
+	}
+	.oferta {
+		order: 5
+	}
 }
 
 @media only screen and (max-width: 850px) {
@@ -3625,6 +3684,25 @@ body {
 		font-size: 24px;
 		line-height: 24px;
 	}
+
+	.reviews-form-w {
+		width: 100%;
+	}
+
+	.reviews-form-name {
+		width: 100%;
+	}
+
+	.reviews-form-email {
+		width: 100%;
+	}
+	.reviews-form-send {
+		width: 100%;
+	}
+
+	.subscribe-email-label-form {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 650px) {
@@ -3641,9 +3719,12 @@ body {
 		flex-wrap: wrap;
 	}
 
-	.footer-block {
-		width: 50%;
-		margin-bottom: 20px;
+	.footer-block:nth-child(1) {
+		padding-bottom: 10px;
+	}
+
+	.footer-w {
+		margin: 30px auto;
 	}
 
 	.our-politics {
@@ -3686,6 +3767,7 @@ body {
 	.email-subscription {
 		padding: 50px 50px 100px 50px;
 	}
+
 }
 
 
@@ -3780,24 +3862,38 @@ body {
 	.reviews-form-send {
 		max-width: 100%;
 	}
-
-	.footer-block {
+	.footer-w {
+		padding: 0 10px;
+	}
+	.footer-block:nth-child(1) {
 		width: 100%;
-		margin-bottom: 30px;
 	}
-
-	.footer-block-contacts {
-		order: 2;
-	}
-
-	.footer-block-menu {
-		order: 1;
-	}
-
-	.footer-block-logo {
+	.footer-block:nth-child(3) {
+		width: calc(100% - 150px);
 		order: 3;
 	}
+	.footer-block:nth-child(2) {
+		width: 100%;
+		order: 2;
+		padding-bottom: 20px;
+	}
+	.footer-block:nth-child(4) {
+		width: 150px;
+		display: flex;
+		align-items: center;
+	}
 
+	.footer-text-sm {
+		display: inline-block;
+	}
+
+	.footer-text-th {
+		display: inline-block;
+	}
+
+	.footer-logo-pic {
+		max-width: 130px;
+	}
 	.footer-social-write {
 		padding: 0 0 10px 0;
 	}
@@ -3965,6 +4061,7 @@ body {
 	}
 	.email-subscription {
 		padding: 50px 15px 100px 15px;
+		background-size: 60px;
 	}
 	.h2-title-subscribe {
 	    font-size: 20px;
@@ -3974,14 +4071,6 @@ body {
 	.email-subscription-p {
 	    font-size: 16px;
 	    line-height: 21px;
-	}
-	.subscribe-email-button {
-		font-size: 13px;
-		width: 90px;
-	}
-	.subscribe-email-label {
-	    width: calc(100% - 90px);
-	    height: 40px;
 	}
 	.subscribe-agree-block .agree-text {
 	    font-size: 16px;
@@ -4003,4 +4092,8 @@ body {
 	.cart-title {
 	    width: 100%;
 	}
+}
+
+.section-assortment {
+	display: none;
 }

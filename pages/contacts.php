@@ -21,7 +21,7 @@
 	<meta property="og:image:alt" content="Coffee cup and beans">
 	
 	<meta name="format-detection" content="telephone=no"></head><body><? require_once('./php/nav.php');?><main class = "wrapper non-main-wrapper">
-		<h1 class = "main-h1 section">Контакты для связи</h1>
+		<h2 class = "secondary-h2 section">Контакты для связи</h2>
 		<section class = "section"><div class = "contacts-section"><p class="simply-text">Мы работаем и доставляем кофе в Москве и Московской области.</p><p class="simply-text">Если вы заинтересовались нашим ассортиментом и у вас есть какие-то вопросы, пожелания или предложения, пишите нам через форму:</p></div></section>
 	
 		<div class = "form-order">

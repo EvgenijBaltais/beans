@@ -147,14 +147,16 @@
 							</div>
 						<?
 							$different_weight_product = [];
+
+							//var_dump($data);
 							
 							foreach ($data as $item2) {
-								if ($item2['name'] == $item['name']) {
+								if ($item2['name'] == $item['name'] && $item2['brand'] == $item['brand'] && $item2['value'] != $item['value']) {
 									array_push($different_weight_product, $item2);
 								}
 							}
 						?>
-						<? if (count($different_weight_product) > 1): ?>
+						<? if (count($different_weight_product) > 0): ?>
 
 							<?
 								usort($different_weight_product, function($a, $b) {

@@ -26,8 +26,9 @@
 	<meta name="format-detection" content="telephone=no"></head><body><? require_once('./php/nav.php');?>
 
 	<main class = "wrapper non-main-wrapper">
+		<h2 class = "secondary-h2 section">Каталог</h2>
+
 		<? require_once("php/breadcrumbs.php");?>
-		<h1 class = "main-h1 section">Каталог</h1>
 
 		<div class="catalog-info section">
 			<p class = "simply-text">Есть вопросы по ассортименту или доставке? Мы на связи и будем рады проконсультировать.<br>Если какой-то товар есть на сайте, то он есть в наличии и доступен к заказу.<br>Хотите получить консультацию или уточнить детали? Ждем ваши вопросы через чат, мессенджеры и по телефону!</p></div>
