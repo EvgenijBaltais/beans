@@ -3703,6 +3703,10 @@ body {
 	.subscribe-email-label-form {
 		width: 100%;
 	}
+
+	.top-contact-text {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 650px) {
@@ -4091,6 +4095,34 @@ body {
 	}
 	.cart-title {
 	    width: 100%;
+	}
+
+	.footer-block:nth-child(1) {
+		width: calc(100% - 170px);
+		order: 1;
+		padding-bottom: 20px;
+	}
+	.footer-block:nth-child(2) {
+		order: 3;
+		width: calc(100% - 170px);
+	}
+	.footer-block:nth-child(3) {
+		order: 2;
+		width: 170px
+	}
+	.footer-block:nth-child(4) {
+		order: 4;
+		width: 170px
+	}
+	.oferta {
+		order: 5
+	}
+	.footer-logo-pic {
+		max-width: 150px;
+	}
+
+	.footer-social-write {
+		margin-right: 0;
 	}
 }
 
