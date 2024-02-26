@@ -63,11 +63,11 @@
 							<div class = "contact-method-form-2">
 								<label class="contact-label">
 									<input type="radio" name="radio-2" checked />
-									<span>Звонок</span>
+									<span>Сообщение</span>
 								</label>
 								<label class="contact-label">
 									<input type="radio" name="radio-2" />
-									<span>Сообщение</span>
+									<span>Звонок</span>
 								</label>
 							</div>
 						</div>

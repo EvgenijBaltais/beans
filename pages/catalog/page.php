@@ -101,19 +101,19 @@
 								<span class = "product-content-span"><?=$item['weight'];?></span>
 							</div>
 							<? if ($item['blend']):?>
-							<div class = "product-content-item product-content-item-flex">
+							<div class = "product-content-item">
 								<span class = "price-info-span">Сорт:</span>
 								<span class = "product-content-span"><?=$item['blend'];?></span>
 							</div>
 							<? endif; ?>
 							<? if ($item['tastes']): ?>
-								<div class = "product-content-item product-content-item-flex">
+								<div class = "product-content-item">
 									<span class = "price-info-span">Вкус:</span>
 									<span class = "product-content-span"><?=$item['tastes'];?></span>
 								</div>
 							<? endif;?>
 							<? if ($item['beans_region']): ?>
-								<div class = "product-content-item product-content-item-flex">
+								<div class = "product-content-item">
 									<span class = "price-info-span">Происхождение зерен:</span>
 									<span class = "product-content-span"><?=$item['beans_region']?></span>
 								</div>
