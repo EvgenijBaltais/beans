@@ -22,14 +22,14 @@
 	<section class = "filters-brands-blocks-items filters-brands">
 		<h3 class="h4-title">Бренды:</h3>
 		<div class = "filters-brands-blocks">
-			<a class = "filters-brands-block-item filter-item all-filter-item<? if ($_SERVER['REQUEST_URI'] == '/catalog'): ?> active<? endif;?>">Все</a>
+			<a class = "filter-item filters-block-item all-filter-item<? if ($_SERVER['REQUEST_URI'] == '/catalog'): ?> active<? endif;?>">Все</a>
 			<? foreach ($brands as $item): ?>
 				<?
 					$dataBrand = strtolower(str_replace(' ', '-', $item));
 					$dataBrand = strtolower(str_replace('(', '', $dataBrand));
 					$dataBrand = strtolower(str_replace(')', '', $dataBrand));
 				?>
-				<a class = "filters-brands-block-item filter-item" data-brand= "<?=$dataBrand;?>"><?=$item;?></a>
+				<a class = "filter-item filters-block-item" data-brand= "<?=$dataBrand;?>"><?=$item;?></a>
 			<? endforeach; ?>
 		</div>
 	</section>
