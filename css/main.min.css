@@ -3140,12 +3140,32 @@ body {
 
 	/* Форма отзывов, конец */
 
+	/* Страница товара */
 	.assortment-item {
 		width: calc(50% - 20px);
 	}
+
+	.product-pics {
+		width: 500px;
+	}
+
+	.glide__item-pic {
+		width: 400px;
+		height: 400px;
+	}
+
+	.product-description {
+		width: calc(100% - 540px);
+	}
+	/* Страница товара, конец */
 }
 
 @media only screen and (max-width: 1050px) {
+
+	.secondary-h2 {
+		font-size: 26px;
+		line-height: 32px;
+	}
 
 	.top-pic {
 		max-width: 200px;
@@ -3176,11 +3196,6 @@ body {
 	    height: 40px;
 	}
 
-	.glide__item-pic {
-	    max-width: 320px;
-	    max-height: 320px;
-	}
-
 	.nav-list {
 		position: absolute;
 		top: 57px;
@@ -3192,7 +3207,7 @@ body {
 		display: none;
 		opacity: 0;
 		padding-top: 100px;
-		background-color: rgba(238,243,255, .95);
+		background-color: rgba(238,243,255, .97);
 		transition: opacity .15s;
 	}
 	.nav.nav-static .nav-list {
@@ -3299,15 +3314,9 @@ body {
 	.catalog-carousel-nav {
 		margin: 25px 0;
 	}
-	.product-pics {
-		width: 420px;
-	}
 	.our-advantages {
 		width: 420px;
 		top: 500px;
-	}
-	.product-description {
-		width: calc(100% - 460px);
 	}
 	.product-icon-item {
 		width: 60px;
@@ -3502,6 +3511,37 @@ body {
 	}
 	.oferta {
 		order: 5
+	}
+	.product-pics {
+		width: 450px;
+	}
+	.product-description {
+		width: calc(100% - 490px);
+	}
+
+	.order-button {
+		width: 280px;
+		height: 60px;
+		font-size: 18px;
+    	line-height: 60px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+
+	.product-pics {
+		width: 100%;
+	}
+	.product-description {
+		width: 100%;
+	}
+	.our-advantages {
+		width: 100%;
+		order: 1
+	}
+	.product-dop-content {
+		width: 100%;
+		order: 2
 	}
 }
 
@@ -3793,34 +3833,27 @@ body {
 	.main-h4 {
 	    line-height: 22px;
 	}
-
 	.full-content-width {
 		padding: 0 10px;
 	}
-
 	.logo-main-link {
 		left: 10px
 	}
-
 	.assortment-item {
 		width: 100%;
 		margin-right: 0;
 		margin-left: 0;
 		margin-bottom: 25px;
 	}
-
 	.item-top {
 		height: 225px;
 	}
-
 	.menu-area {
 		right: 10px;
 	}
-
 	.top-button {
 		width: 100%;
 	}
-
 	.more-info {
 		height: 60px;
 	    width: 100%;
@@ -3829,26 +3862,21 @@ body {
 	    line-height: 60px;
 	    font-weight: bold;
 	}
-
 	.advantage-text {
 		padding-left: 40px;
 	}
 	.advantage-text:before {
 		left: 15px;
 	}
-
 	.reviews-form-name {
 		max-width: 100%;
 	}
-
 	.reviews-form-email {
 		max-width: 100%;
 	}
-
 	.reviews-form-text {
 		max-width: 100%;
 	}
-
 	.reviews-form-send {
 		max-width: 100%;
 	}
@@ -3876,7 +3904,6 @@ body {
 	.footer-text-sm {
 		display: inline-block;
 	}
-
 	.footer-text-th {
 		display: inline-block;
 	}
@@ -3887,17 +3914,14 @@ body {
 	.footer-social-write {
 		padding: 0 0 10px 0;
 	}
-
 	.non-main-wrapper {
 		padding-top: 0;
 	}
-
 	.glide__item-pic {
 		display: block;
 		max-width: 250px;
 		max-height: 250px;
 	}
-
 	.glide__item {
 		padding: 20px 0;
 	}
@@ -3910,7 +3934,6 @@ body {
 		font-size: 24px;
 		line-height: 32px;
 	}
-
 	.accessibility-span {
 		font-size: 18px;
 		line-height: 24px;
@@ -3928,16 +3951,6 @@ body {
 		padding: 0 25px;
 		margin-top: 40px;
 	}
-
-	.amount-select-minus {
-		width: 45px;
-    	height: 45px;
-	}
-	.amount-select-plus {
-		width: 45px;
-    	height: 45px;
-	}
-
 	.product-details-item__title {
 		width: calc(100% - 200px);
 		font-size: 13px;
@@ -4062,7 +4075,6 @@ body {
 	.cart-title {
 	    width: 100%;
 	}
-
 	.footer-block:nth-child(1) {
 		width: 100%;
 		order: 1;
@@ -4086,8 +4098,23 @@ body {
 	.footer-logo-pic {
 		max-width: 150px;
 	}
-
 	.footer-social-write {
 		margin-right: 0;
+	}
+	.item-info-w-2 {
+		display: flex;
+		justify-content: space-between;
+	}
+	.amount-select {
+		margin-right: 0;
+	}
+	.our-advantages {
+		padding: 20px;
+	}
+	.our-advantages-item {
+		font-size: 16px;
+	}
+	.product-dop-content {
+		margin-top: 50px;
 	}
 }

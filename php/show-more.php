@@ -35,8 +35,8 @@
 									<div class = "item-plus-minus">
 										<div class = "item-amount-minus">–</div>
 										<div class = "item-amount-val-block">
-											<label for = "num-<?=$item['id'];?>">
-												<input type="text" name = "item-amount-value" class = "item-amount-value" readonly = "readonly" value = "1" id = "num-<?=$item['id'];?>" aria-label="Количество товаров для заказа">
+											<label for = "num-<?=$item2['id'];?>">
+												<input type="text" name = "item-amount-value" class = "item-amount-value" readonly = "readonly" value = "1" id = "num-<?=$item2['id'];?>" aria-label="Количество товаров для заказа">
 											</label>
 										</div>
 										<div class = "item-amount-plus">+</div>
