@@ -65,7 +65,7 @@
 	</section>
 		
 		<? require_once("php/assortment_block.php");?>
-
+		<? require_once('php/subscribe-form.php');?>
 		<section class = "section plus-minus">
 			<h2 class = "h2-title">Если вы любитель кофе - наш магазин <a href = "/" class = "simple-link">Bluebeans.ru</a> к вашим услугам!</h2>
 			<ul class="advantages-block">
@@ -115,7 +115,6 @@
 			</ul>
 		</section>
 		<? require_once('php/catalog-gifts.php');?>
-		<? require_once('php/subscribe-form.php');?>
 		<? require_once('php/feedback-form.php');?>
 	</main><? require_once('php/footer.php');?><script src = "/node_modules/@glidejs/glide/dist/glide.min.js"></script><script src = "plugins/Inputmask-5.x/dist/inputmask.min.js"></script><script type="module" src = "js/script.min.js"></script><script src = "../js/carousels.min.js"></script>
 	<? require_once('chat/chat.php');?>

@@ -18,7 +18,7 @@
         </div>
         <div class="footer-block">
             <p class="footer-text-sm">Доставка по Москве:</p>
-            <p class="footer-text-th">c 9:00 до 22:00</span>
+            <p class="footer-text-th">c 9:00 до 22:00</p>
         </div>
         <div class="footer-block footer-block-menu">
             <ul class="footer-nav">
