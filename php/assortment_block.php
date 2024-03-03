@@ -16,11 +16,13 @@ $get_weight = check_get_weight (get_weights($data));
 			$dataBrand = strtolower(str_replace(' ', '-', $item['brand']));
 			$dataBrand = strtolower(str_replace('(', '', $dataBrand));
 			$dataBrand = strtolower(str_replace(')', '', $dataBrand));
+			$finalPrice = $item['sale'] ? floor($item['price'] - $item['price'] / $item['sale']) : $item['price'];
 		?>
 
 		<div class="product-card assortment-item<?=$get_weight && $get_weight != (int)$item['weight'] ? ' hidden' : '';?>"
 			data-weight = "<?=(int)$item['weight'] == 1 ? $dataWeight = 1000 : (int)$item['weight'];?>"
 			data-brand = "<?=$dataBrand;?>"
+			data-price = "<?=$finalPrice;?>"
 			data-id="<?=$item['id'];?>">
 			<div class="assortment-item-w">
 				<div class = "product-marks">
@@ -54,7 +56,7 @@ $get_weight = check_get_weight (get_weights($data));
 						</div>
 						<div class = "item-info item-info-1">
 							<?=$item['sale'] ? '<span class = "item-info__full">' . $item['price'] .  ' ₽</span>' : '';?>
-							<span class = "item-info__span"><?=$item['sale'] ? floor($item['price'] - $item['price'] / $item['sale'])  : $item['price'];?> ₽</span>
+							<span class = "item-info__span"><?=$finalPrice;?> ₽</span>
 						</div>
 					</div>
 					<div class = "item-order-info">

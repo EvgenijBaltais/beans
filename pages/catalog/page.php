@@ -34,6 +34,7 @@
 </head>
 	<body>
 	<? require_once('./php/nav.php');?>
+	<? $finalPrice = $item['sale'] ? floor($item['price'] - $item['price'] / $item['sale'])  : $item['price'];?>
 	<main class = "wrapper non-main-wrapper">
 		<? require_once("php/breadcrumbs.php");?>
 		<div class="section product-item">
@@ -135,7 +136,7 @@
 							</section>
 							<div class = "product-item-add-cart">
 								<div class = "order-buttons">
-									<div class="order-button order-button-cart" data-id = "<?=$item['id']?>">
+									<div class="order-button order-button-cart" data-id = "<?=$item['id']?>" data-price = "<?=$finalPrice?>">
 										Добавить в корзину
 									</div><!--
 									<div class="red-btn btn-30px order-button">
