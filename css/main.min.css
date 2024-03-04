@@ -1450,6 +1450,7 @@ body {
 	font-size: 30px;
 	border: 2px solid rgb(238, 235, 228);
 	user-select: none;
+	cursor: pointer;
 }
 
 .item-amount-plus {
@@ -1481,6 +1482,7 @@ body {
 	line-height: 30px;
 	border: 2px solid rgb(238, 235, 228);
 	user-select: none;
+	cursor: pointer;
 }
 
 .item-amount-val-block {

@@ -9,6 +9,7 @@
 		<div class="glide__track" data-glide-el="track"> 
 			<div class = "glide__slides catalog-carousel__slides">
 				<? foreach ($data as $key => $item): ?>
+					<? $finalPrice = $item['sale'] ? floor($item['price'] - $item['price'] / 100 * $item['sale']) : $item['price']; ?>
 					<? if ($key == 10) break;?>
 					<div class="product-card catalog-carousel__item" data-id="<?=$item['id'];?>">
 						<div class="assortment-item-w">
@@ -42,8 +43,8 @@
 										<div class = "item-amount-plus">+</div>
 									</div>
 									<div class = "item-info item-info-1">
-										<?=$item['sale'] ? '<span class = "item-info__full">' . $item['price'] .  ' ₽</span>' : '';?>
-										<span class = "item-info__span"><?=$item['sale'] ? floor($item['price'] - $item['price'] / $item['sale'])  : $item['price'];?> ₽</span>
+										<?=$item['sale'] ? '<span class = "item-info__full">' . number_format($item['price'], 0, ',', ' ') .  ' ₽</span>' : '';?>
+										<span class = "item-info__span"><?=$item['sale'] ? number_format($finalPrice, 0, ',', ' ') : number_format($item['price'], 0, ',', ' ');?> ₽</span>
 									</div>
 								</div>
 								<div class = "item-order-info">

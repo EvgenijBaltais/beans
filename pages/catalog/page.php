@@ -34,7 +34,7 @@ for ($i = 0; $i < count($data); $i++) {
 </head>
 <body>
 	<? require_once('./php/nav.php');?>
-	<? $finalPrice = $item['sale'] ? floor($item['price'] - $item['price'] / $item['sale'])  : $item['price'];?>
+	<? $finalPrice = $item['sale'] ? floor($item['price'] - $item['price'] / 100 * $item['sale']) : $item['price']; ?>
 	<main class = "wrapper non-main-wrapper">
 		<? require_once("php/breadcrumbs.php");?>
 		<div class="section product-item">
@@ -76,8 +76,8 @@ for ($i = 0; $i < count($data); $i++) {
 								<div class = "amount-select-plus">+</div>
 							</div>
 							<div class = "item-info-2 item-info-1-2">
-								<?=$item['sale'] ? '<span class = "item-info__full-2">' . $item['price'] .  ' ₽</span>' : '';?>
-								<span class = "item-info__span-2"><?=$item['sale'] ? floor($item['price'] - $item['price'] / $item['sale'])  : $item['price'];?> ₽</span>
+								<?=$item['sale'] ? '<span class = "item-info__full-2">' . number_format($item['price'], 0, '', ' ') .  ' ₽</span>' : '';?>
+								<span class = "item-info__span-2"><?=$item['sale'] ? number_format($finalPrice, 0, '', ' ') : number_format($item['price'], 0, '', ' ');?> ₽</span>
 							</div>
 						</div>
 					</div>
