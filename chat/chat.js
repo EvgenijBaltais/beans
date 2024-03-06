@@ -54,8 +54,8 @@
 					card.getAttribute('data-weight'),
 					card.querySelector('img').getAttribute('src'),
 					card.querySelector('.item-title-link').innerText,
-					card.querySelector('.item-info-2 .item-info__span').innerText,
-					card.querySelector('.item-amount-value').value
+					card.querySelector('.item-amount-value').value,
+					card.getAttribute('data-price')
 				)
 			})
 		})

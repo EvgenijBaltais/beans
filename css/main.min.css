@@ -357,6 +357,19 @@ body {
 	line-height: 16px;
 	text-decoration: none;
 	cursor: pointer;
+	display: none;
+}
+.cart-block.visible {
+	display: block
+}
+
+.cart-block.active {
+	background-image: url('../images/icons/cart-white.svg');
+	background-color: rgb(39,174,97);
+}
+
+.cart-block.active span {
+	color: #fff
 }
 
 .cart {
@@ -3772,7 +3785,7 @@ body {
 	}
 	.nav {
 		padding-top: 48px;
-		height: 96px;
+		height: 90px;
 	}
 	.nav-list {
 		top: 44px;
@@ -3784,8 +3797,8 @@ body {
 		max-width: 120px;
 	}
 	.cart-block {
-		font-size: 13px;
-		line-height: 13px;
+		font-size: 12px;
+		line-height: 12px;
 		right: 90px;
 		background-size: 20px;
 		padding: 6px 10px 6px 35px;
@@ -3850,10 +3863,6 @@ body {
 		width: calc(100% - 40px);
 		margin-top: 0;
 	}
-	.section-top.main-page-screen {
-		padding-top: 150px;
-	}
-
 	.advantages-constructor-list-w:after {
 		width: 40px;
     	height: 40px;
@@ -3871,6 +3880,44 @@ body {
 		line-height: 24px;
 		padding-left: 40px;
 		background-size: 30px;
+	}
+
+	.main-h1 {
+		font-size: 26px;
+		line-height: 30px;
+	}
+	.main-h2 {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.main-h3 {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.main-h4 {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.top-1 {
+		width: 70%;
+		padding-right: 10px;
+	}
+	.top-2 {
+		width: 30%;
+	}
+	.top-pic {
+		margin-right: 0;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.section-top.main-page-screen {
+		padding-top: 0
+	}
+
+	.main-page-screen-section {
+		max-height: 100%;
 	}
 }
 
@@ -3893,15 +3940,6 @@ body {
 	.top-delivery-info {
 		font-size: 11px;
 		right: 10px;
-	}
-
-	.main-h3 {
-	    font-size: 18px;
-	    line-height: 22px;
-	}
-
-	.main-h4 {
-	    line-height: 22px;
 	}
 	.full-content-width {
 		padding: 0 10px;
@@ -3994,10 +4032,6 @@ body {
 	}
 	.glide__item {
 		padding: 20px 0;
-	}
-	.main-h2 {
-		font-size: 22px;
-		line-height: 28px;
 	}
 	.price-span {
 		font-weight: bold;
@@ -4189,5 +4223,15 @@ body {
 	}
 	.catalog-slides {
 		padding-top: 0
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.logo-main {
+		max-width: 100px;
+	}
+	.cart-block {
+		font-size: 10px;
+		line-height: 10px;
 	}
 }
