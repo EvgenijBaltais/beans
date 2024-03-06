@@ -149,10 +149,14 @@ body {
 	z-index: 6;
 }
 
+:root {
+    --vh: 1vh;
+}
+
 .main-page-screen {
 	position: relative;
 	height: 100vh;
-	width: 100%;
+	height: calc(var(--vh, 1vh) * 100);
 	background-image: linear-gradient(20deg, rgba(29,118,140,1) 15%, rgba(160,121,90,1) 100%);
 	margin-top: -151px;
 	padding-top: 190px;
@@ -3797,8 +3801,8 @@ body {
 		max-width: 120px;
 	}
 	.cart-block {
-		font-size: 12px;
-		line-height: 12px;
+		font-size: 13px;
+		line-height: 13px;
 		right: 90px;
 		background-size: 20px;
 		padding: 6px 10px 6px 35px;

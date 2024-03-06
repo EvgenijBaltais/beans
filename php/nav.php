@@ -14,15 +14,11 @@
 		
 		<!--<a href="/cart" rel="nofollow" class = "cart" aria-label="Перейти в корзину"></a>-->
 		<a href="/cart" rel="nofollow" aria-label="Перейти в корзину" class = "cart-block">
-			<span class = "cart-num">0</span>
-			&nbsp;
+			<span class = "cart-num">0 </span>
 			<span class = "cart-price-text">товаров</span>
-			&nbsp;
-			<span>/</span>
-			&nbsp;
+			<span> / </span>
 			<span class = "cart-price-value">0</span>
-			&nbsp;
-			<span>₽</span>
+			<span> ₽</span>
 		</a>
 		
 		<div class = "menu-area"><div class="menu-area-w"></div><div class="menu-icon"><span></span><span></span><span></span><span></span></div></div><div class = "cart-warnings"></div></div></nav></header>
