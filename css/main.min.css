@@ -1859,14 +1859,35 @@ body {
 .cart-item {
 	position: relative;
 	width: 730px;
-	height: 160px;
+	min-height: 160px;
 	padding-bottom: 80px;
 	display: flex;
+}
+
+.cart-item > * {
+	outline: 1px solid green;
+}
+
+.product-cart-title {
+	width: calc(100% - 185px);
+	text-align: left;
+}
+
+.product-cart-bottom {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	left: 145px;
 }
 
 .product-cart-pic {
 	width: 145px;
 	padding-right: 10px;
+}
+
+.product-cart-title-span {
+	font-size: 16px;
+	line-height: 24px;
 }
 
 .product-cart-end {
@@ -1892,11 +1913,14 @@ body {
 }
 
 .cart-remove {
+	position: absolute;
+	top: 0;
+	right: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 30px;
-	height: 30px;
+	width: 25px;
+	height: 25px;
 	background-image: url('../images/icons/cross.svg');
 	background-color: rgb(224, 224, 224);
 	background-repeat: no-repeat;

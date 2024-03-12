@@ -28,8 +28,8 @@
 			<div class = "cart-remove"></div>
 			<div class="product-cart-pic"></div>
 			<div class="product-cart-title">
-				<a href = "/catalog/${item.url_name}" target = "_blank" class = "thin-font-style">
-                	<span>${item.category}</span> <span class = "bold-text-600">${item.brand} ${item.name} ${[window.screen.width <= 1050 ? ` (${item.weight})` : ``]}</span>
+				<a href = "/catalog/${item.url_name}" target = "_blank" class = "product-cart-title-link thin-font-style">
+                	<span class = "product-cart-title-span">${item.category}</span> <span class = "product-cart-title-span bold-text-600">${item.brand} ${item.name} ${[window.screen.width <= 1050 ? ` (${item.weight})` : ``]}</span>
 				</a>
 			</div>
 			<div class="product-cart-bottom">
