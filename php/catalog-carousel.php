@@ -11,7 +11,7 @@
 				<? foreach ($data as $key => $item): ?>
 					<? $finalPrice = $item['sale'] ? floor($item['price'] - $item['price'] / 100 * $item['sale']) : $item['price']; ?>
 					<? if ($key == 10) break;?>
-					<div class="product-card catalog-carousel__item" data-id="<?=$item['id'];?>">
+					<div class="product-card catalog-carousel__item" data-id="<?=$item['id'];?>" data-price = "<?=$finalPrice;?>">
 						<div class="assortment-item-w">
 							<div class = "product-marks">
 								<? if ($item['rating'] >= 90):?>

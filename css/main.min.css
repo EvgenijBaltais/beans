@@ -375,7 +375,7 @@ body {
 
 .cart-block.active {
 	background-image: url('../images/icons/cart-white.svg');
-	background-color: rgb(39,174,97);
+	background-color: #27ae60;
 }
 
 .cart-block.active span {
@@ -405,7 +405,7 @@ body {
 }
 
 .cart-add-warning {
-	background-color: rgb(109,180,66);
+	background-color: #27ae60;
 	color: #fff;
 	text-align: center;
 	padding: 10px;
@@ -1170,9 +1170,11 @@ body {
 	cursor: pointer;
 }
 
-.assortment-item:hover {
-	box-shadow: 0px 8px 16px 0px rgba(34, 60, 80, .3);
-	transition: box-shadow .2s;
+@media only screen and (min-width: 1050px) {
+	.assortment-item:hover {
+		box-shadow: 0px 8px 16px 0px rgba(34, 60, 80, .3);
+		transition: box-shadow .2s;
+	}
 }
 
 .assortment-item.hidden {
@@ -1229,10 +1231,16 @@ body {
 	line-height: 18px;
 	font-weight: bold;
 	display: inline-block;
-	color: rgb(98,148,155);
+	color: #2d9cdb;
 	text-decoration: underline;
 	cursor: pointer;
 	user-select: none;
+	transition: .2s color;
+}
+
+.one-click-order:hover {
+	transition: .2s color;
+	color: #62959c;
 }
 
 .item-top {
@@ -1276,7 +1284,7 @@ body {
 }
 
 .item-info-1 {
-	width: 47.5%;
+	width: 40%;
     font-size: 24px;
     line-height: 24px;
 	font-weight: bold;
@@ -1322,6 +1330,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	cursor: pointer;
 }
 
 .item-order-btn {
@@ -1346,7 +1355,7 @@ body {
 
 .item-order-btn:hover {
 	transition: .2s background-color;
-	background-color: rgb(99,149,156);
+	background-color: #62959c;
 }
 
 .item-more-btn {
@@ -1359,12 +1368,19 @@ body {
 	font-size: 18px;
 	line-height: 48px;
 	user-select: none;
-	border: 1px solid rgb(162,123,92);
-	color: rgb(162,123,92)
+	border: 1px solid #a27b5c;
+	color: #a27b5c;
+	transition: color .2s, border-color .2s;
+}
+
+.item-more-btn:hover {
+	color: #27ae60;
+	border: 1px solid #27ae60;
+	transition: color .2s, border-color .2s;
 }
 
 .item-in-cart .item-order-btn {
-	background-color: #45AC04;
+	background-color: #27ae60;
 }
 
 .item-in-cart .item-order-btn a {
@@ -1513,15 +1529,15 @@ body {
 }
 
 .item-in-cart .item-plus-minus {
-	border-color: #45AC04;
+	border-color: #27ae60;
 }
 
 .item-in-cart .item-amount-minus {
-	border-color: #45AC04;
+	border-color: #27ae60;
 }
 
 .item-in-cart .item-amount-plus {
-	border-color: #45AC04;
+	border-color: #27ae60;
 }
 
 /* Секция Ассортимент, конец */
@@ -1537,8 +1553,16 @@ body {
 	margin: 50px 0 0 0;
 	text-align: center;
 	text-decoration: none;
-	background-color: rgb(162, 123, 92);
+	background-color: #a27b5c;
+	transition: .2s background-color;
 	color: #fff;
+}
+
+@media only screen and (min-width: 1050px) {
+	.top-button:hover {
+		transition: .2s background-color;
+		background-color: #27ae60;
+	}
 }
 
 .order-buttons {
@@ -1581,7 +1605,7 @@ body {
 	margin: auto;
 	width: 100%;
 	height: 100%;
-	background-color: #44AA03;
+	background-color: #27ae60;
     transition: all .2s;
     color: #fff;
     z-index: 3;
@@ -1822,14 +1846,13 @@ body {
 	border: 0;
 	outline: 0!important;
 	cursor: pointer;
-	transition: background-color .2s, box-shadow .2s;
+	transition: background-color .2s;
 	user-select: none;
 }
 
 .reviews-form-send:hover {
-	transition: background-color .2s, box-shadow .2s;
-	background-color: #3F9FD2;
-	box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
+	transition: background-color .2s;
+	background-color: #62959c;
 }
 
 /* Форма отзывов, конец */
@@ -1887,7 +1910,23 @@ body {
 	margin-bottom: 60px;
 }
 
+.cart-item:not(:last-child):after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 1px;
+	bottom: -20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border-bottom: 1px solid #F6F3ED;
+}
+
 .cart-final {
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 130px;
 	width: 32.3%;
 	padding: 40px;
 	box-shadow: 0 3px 10px 1px rgba(0,0,0,.2);
@@ -2969,7 +3008,7 @@ body {
 }
 
 .subscribe-email-button:hover {
-	background-color: #45AC04;
+	background-color: #27ae60;
 	transition: .2s background-color;
 }
 
@@ -3454,6 +3493,7 @@ body {
 		width: 100%;
 	}
 	.cart-final {
+		position: static;
 		width: 100%;
 	}
 }
