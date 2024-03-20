@@ -493,9 +493,6 @@ body {
 	display: flex;
 	align-items: center;
 	margin-right: 30px;
-}
-
-.top-contact-link {
 	width: 25px;
 	height: 25px;
 	background-repeat: no-repeat;
@@ -504,17 +501,20 @@ body {
 }
 
 .top-contact-link-telegramm {
-	margin-right: 10px;
+	margin-right: 20px;
 	background-image: url('../images/icons/telegramm.svg');
+	background-repeat: no-repeat;
 }
 
 .top-contact-link-whatsapp {
-	margin-right: 10px;
+	margin-right: 20px;
 	background-image: url('../images/icons/whatsapp.svg');
+	background-repeat: no-repeat;
 }
 
 .top-contact-link-chat {
 	background-image: url('../images/icons/chat-blue.png');
+	background-repeat: no-repeat;
 }
 
 .top-contact-text {
@@ -722,26 +722,27 @@ body {
 	color: #fff;
 	text-decoration: underline;
 }
-
+/*
 .secondary-h1 {
 	text-align: center;
 	font-size: 64px;
 	line-height: 70px;
 	padding: 10px 0 20px 0
 }
-
+*/
 .secondary-h2 {
 	font-size: 32px;
 	line-height: 38px;
 	padding-bottom: 20px;
 	padding-top: 20px;
 }
-
+/*
 .secondary-h3 {
 	font-size: 24px;
 	line-height: 30px;
 }
-
+*/
+/*
 .secondary-h4 {
 	font-size: 20px;
 	line-height: 24px;
@@ -751,6 +752,7 @@ body {
 .secondary-h-link {
 	text-decoration: underline;
 }
+*/
 
 .h2-title {
 	font-size: 30px;
@@ -758,13 +760,13 @@ body {
 	font-weight: bold;
 	padding-bottom: 40px;
 }
-
+/*
 .h3-title {
 	font-size: 26px;
 	line-height: 30px;
 	font-weight: bold;
 	padding-bottom: 20px;
-}
+}*/
 
 .h4-title {
 	font-size: 20px;
@@ -797,10 +799,10 @@ body {
 .simply-text-padding {
 	padding: 30px 0 20px 0;
 }
-
+/*
 .section-center {
 	text-align: center;
-}
+}*/
 
 .red-btn {
 	display: inline-block;
@@ -814,7 +816,7 @@ body {
 .red-btn:hover .red-btn-ins {
 	left: -100%;
 }
-
+/*
 .red-btn-span {
 	position: relative;
 	font-size: 24px;
@@ -822,7 +824,7 @@ body {
 	z-index: 1;
 	color: #fff;
 	font-weight: bold;
-}
+}*/
 
 .red-btn-ins {
 	display: block;
@@ -836,7 +838,7 @@ body {
 	z-index: 0;
 	transition: left .3s;
 }
-
+/*
 .green-btn-ins {
 	display: block;
 	position: absolute;
@@ -848,7 +850,7 @@ body {
 	background: linear-gradient(90deg, rgba(69,172,4,1) 0%, rgba(69,145,4,1) 50%, rgba(69,145,47,1) 100%);
 	z-index: 0;
 	transition: left .3s;
-}
+}*/
 
 .order-btn {
 	display: inline-block;
@@ -1509,7 +1511,6 @@ body {
 	outline: 0!important;
 	background-color: transparent;
     font-size: 24px;
-    line-height: 38px;
     font-weight: bold;
 	text-align: center;
 	color: rgb(63, 79, 79);
@@ -1523,7 +1524,6 @@ body {
 	outline: 0!important;
 	background-color: transparent;
     font-size: 24px;
-    line-height: 38px;
     font-weight: bold;
 	text-align: center;
 	color: rgb(63, 79, 79);
@@ -3666,6 +3666,10 @@ body {
 
 	.assortment-item {
 		width: 100%;
+	}
+
+	.cart-in-stock {
+		left: 0
 	}
 
 	.product-cart-title-span {
