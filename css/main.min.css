@@ -25,6 +25,15 @@
 	color: #333;
 }
 
+input,
+textarea,
+button,
+select,
+a,
+div {
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
 	opacity: 0;
 	position: relative;
@@ -2015,7 +2024,7 @@ body {
 }
 
 .product-cart-bottom {
-	width: 100%;
+	width: calc(100% - 10px);
 	display: flex;
 	position: absolute;
 	align-items: center;
@@ -3670,7 +3679,16 @@ body {
 		text-align: left;
 	}
 	.product-cart-bottom {
-		bottom: -65px
+		bottom: -65px;
+		width: calc(100% - 20px);
+	}
+
+	.cart-remove {
+		right: 10px;
+	}
+
+	.cart-item:not(:last-child):after {
+		bottom: -85px;
 	}
 
 	.cart-item {

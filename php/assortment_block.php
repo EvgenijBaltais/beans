@@ -42,7 +42,8 @@ $get_weight = check_get_weight (get_weights($data));
 				<div class = "item-bottom">
 					<p class = "item-title">
 						<a class = "item-title-link" href ="/catalog/<?=$item['url_name'];?>" title = "Подробнее">
-							<span class = "thin-font-style"><?=$item['category'];?></span> <span class = "item-title-text"><?=$item['brand'];?> <?=$item['name'];?>, <?=$item['weight'];?></span></a>
+							<span class = "thin-font-style"><?=$item['category'];?></span> <span class = "item-title-text"><?=$item['brand'];?> <?=$item['name'];?>, <?=$item['weight'];?></span>
+						</a>
 					</p>
 					<div class = "item-info-w">
 						<div class = "item-plus-minus">
