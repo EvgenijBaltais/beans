@@ -493,16 +493,14 @@ body {
 	display: flex;
 	align-items: center;
 	margin-right: 30px;
-	width: 25px;
-	height: 25px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	cursor: pointer;
 }
 
 .top-contact-link {
-	width: 25px;
-	height: 25px;
+	width: 30px;
+	height: 30px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	cursor: pointer;
@@ -3595,8 +3593,8 @@ body {
 	}
 
 	.top-contact-link {
-		width: 30px;
-		height: 30px;
+		width: 32px;
+		height: 32px;
 	}
 
 	.assortment-item {
@@ -3725,6 +3723,17 @@ body {
 }
 
 @media only screen and (max-width: 650px) {
+
+	.top-contact-link {
+		width: 36px;
+		height: 36px;
+	}
+	.top-contact-link-telegramm {
+		margin-right: 15px;
+	}
+	.top-contact-link-whatsapp {
+		margin-right: 15px;
+	}
 	.form-order-input {
 		height: 60px;
 	}
@@ -3876,11 +3885,6 @@ body {
 
 	.top-contacts-ins {
 		padding: 0 10px;
-	}
-
-	.top-contact-link {
-		width: 32px;
-		height: 32px;
 	}
 
 	.top-delivery-info {
@@ -4107,6 +4111,16 @@ body {
 	.cart-block {
 		font-size: 10px;
 		line-height: 10px;
+	}
+	.top-contact-link {
+		width: 32px;
+		height: 32px;
+	}
+	.top-contact-link-telegramm {
+		margin-right: 10px;
+	}
+	.top-contact-link-whatsapp {
+		margin-right: 10px;
 	}
 }
 
