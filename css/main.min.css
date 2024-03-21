@@ -500,14 +500,22 @@ body {
 	cursor: pointer;
 }
 
+.top-contact-link {
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+
 .top-contact-link-telegramm {
-	margin-right: 20px;
+	margin-right: 10px;
 	background-image: url('../images/icons/telegramm.svg');
 	background-repeat: no-repeat;
 }
 
 .top-contact-link-whatsapp {
-	margin-right: 20px;
+	margin-right: 10px;
 	background-image: url('../images/icons/whatsapp.svg');
 	background-repeat: no-repeat;
 }
